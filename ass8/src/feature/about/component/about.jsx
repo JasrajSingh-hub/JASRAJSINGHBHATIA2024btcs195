@@ -24,9 +24,11 @@ function About(){
 
         <div>
             {
-                data.skills.map((pass) => (
-                    <Card title={pass.title} category={pass.items} />
-                ))
+               data.skills.map((p)=>(
+                <Card title={p.title} category={p.items.map((h)=>(
+                    `${h} \n`
+                ))}/>
+               ))
             }
         </div>
         </>
