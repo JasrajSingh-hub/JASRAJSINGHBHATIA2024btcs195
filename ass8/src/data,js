@@ -1,0 +1,85 @@
+const data = {
+  name: "Alex Johnson",
+  tag: "Full Stack Developer",
+
+  shortBio:
+    "Passionate Full Stack Developer with experience in building scalable web applications using modern technologies. Loves solving real-world problems through clean and efficient code.",
+
+  fullBio:
+    "I'm a Full Stack Developer with a strong interest in creating responsive, user-friendly, and high-performance applications. I enjoy working across both frontend and backend technologies, transforming ideas into functional digital products. My experience includes developing REST APIs, interactive user interfaces, and cloud-based applications. I continuously explore new technologies and best practices to improve my skills. Outside of coding, I enjoy contributing to open-source projects and learning about software architecture.",
+
+  skills: [
+    {
+      title: "Frontend",
+      items: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      title: "Backend",
+      items: [
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Django",
+        "REST APIs",
+        "JWT Authentication"
+      ]
+    },
+    {
+      title: "Database",
+      items: [
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Firebase"
+      ]
+    },
+    {
+      title: "Tools",
+      items: [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+        "VS Code",
+        "Figma"
+      ]
+    }
+  ],
+
+  projects: [
+    {
+      title: "E-Commerce Platform",
+      bio:
+        "A modern online shopping platform featuring authentication, product management, shopping cart, and secure payment integration.",
+      tags: ["React", "Node.js", "MongoDB"]
+    },
+    {
+      title: "Task Management App",
+      bio:
+        "A collaborative task management application with drag-and-drop boards, team collaboration, and real-time updates.",
+      tags: ["Next.js", "Firebase", "Tailwind CSS"]
+    },
+    {
+      title: "Weather Dashboard",
+      bio:
+        "A responsive weather application that displays live forecasts, hourly weather, and location-based weather information.",
+      tags: ["JavaScript", "OpenWeather API", "CSS"]
+    },
+    {
+      title: "Portfolio Website",
+      bio:
+        "A clean and responsive personal portfolio showcasing projects, skills, experience, and contact information.",
+      tags: ["React", "Framer Motion", "Tailwind CSS"]
+    }
+  ]
+};
+
+export default data;
