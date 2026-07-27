@@ -4,6 +4,8 @@ import data from "../../../data,js";
 import a from "../../../assets/hero.png"
 import Card from "../../../shared/component/card";
 
+import PP from "../../../shared/component/project";
+
 function About(){
     return(
         <>
@@ -22,15 +24,21 @@ function About(){
         </div>
         <div>Skills</div>
 
-        <div>
+        <div className="flex gap-20 justify-between p-30">
             {
-               data.skills.map((p)=>(
-                <Card title={p.title} category={p.items.map((h)=>(
-                    `${h} \n`
-                ))}/>
+               data.skills.map((p, index)=>(
+                <Card key={index} title={p.title} category={p.items}/>
                ))
             }
         </div>
+          <div className="flex gap-20 justify-between p-30">
+            {
+               data.projects.map((p, index)=>(
+                <PP key={index} title={p.title} bio={p.bio} category={p.tags}/>
+               ))
+            }
+        </div>
+     
         </>
     )
 }

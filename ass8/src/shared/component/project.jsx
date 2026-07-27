@@ -1,10 +1,11 @@
-function Card({title,category}){
+function PP({title,category,bio}){
     return(
         <>
         <div className="flex flex-col gap-3 ">
             <h1 className="text-3xl">
                 {title}
             </h1>
+            <h1>{bio}</h1>
             <div className="">
             <h3 >
                 {category.map((pass,index)=>(
@@ -16,4 +17,4 @@ function Card({title,category}){
         </>
     )
 }
-export default Card;
+export default PP;
