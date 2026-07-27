@@ -1,85 +1,149 @@
-const data = {
-  name: "Alex Johnson",
-  tag: "Full Stack Developer",
+const data = [
+  {
+    name: "Alex Johnson",
+    tag: "Full Stack Developer",
 
-  shortBio:
-    "Passionate Full Stack Developer with experience in building scalable web applications using modern technologies. Loves solving real-world problems through clean and efficient code.",
+    shortBio:
+      "Passionate Full Stack Developer with experience in building scalable web applications using modern technologies. Loves solving real-world problems through clean and efficient code.",
 
-  fullBio:
-    "I'm a Full Stack Developer with a strong interest in creating responsive, user-friendly, and high-performance applications. I enjoy working across both frontend and backend technologies, transforming ideas into functional digital products. My experience includes developing REST APIs, interactive user interfaces, and cloud-based applications. I continuously explore new technologies and best practices to improve my skills. Outside of coding, I enjoy contributing to open-source projects and learning about software architecture.",
+    fullBio:
+      "I'm a Full Stack Developer with a strong interest in creating responsive, user-friendly, and high-performance applications. I enjoy working across both frontend and backend technologies, transforming ideas into functional digital products. My experience includes developing REST APIs, interactive user interfaces, and cloud-based applications. I continuously explore new technologies and best practices to improve my skills. Outside of coding, I enjoy contributing to open-source projects and learning about software architecture.",
 
-  skills: [
-    {
-      title: "Frontend",
-      items: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Tailwind CSS"
-      ]
-    },
-    {
-      title: "Backend",
-      items: [
-        "Node.js",
-        "Express.js",
-        "Python",
-        "Django",
-        "REST APIs",
-        "JWT Authentication"
-      ]
-    },
-    {
-      title: "Database",
-      items: [
-        "MongoDB",
-        "MySQL",
-        "PostgreSQL",
-        "Firebase"
-      ]
-    },
-    {
-      title: "Tools",
-      items: [
-        "Git",
-        "GitHub",
-        "Docker",
-        "Postman",
-        "VS Code",
-        "Figma"
-      ]
-    }
-  ],
+    skills: [
+      {
+        title: "Frontend",
+        items: [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+        ],
+      },
+      {
+        title: "Backend",
+        items: [
+          "Node.js",
+          "Express.js",
+          "Python",
+          "Django",
+          "REST APIs",
+          "JWT Authentication",
+        ],
+      },
+      {
+        title: "Database",
+        items: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"],
+      },
+      {
+        title: "Tools",
+        items: [
+          "Git",
+          "GitHub",
+          "Docker",
+          "Postman",
+          "VS Code",
+          "Figma",
+        ],
+      },
+    ],
 
-  projects: [
-    {
-      title: "E-Commerce Platform",
-      bio:
-        "A modern online shopping platform featuring authentication, product management, shopping cart, and secure payment integration.",
-      tags: ["React", "Node.js", "MongoDB"]
-    },
-    {
-      title: "Task Management App",
-      bio:
-        "A collaborative task management application with drag-and-drop boards, team collaboration, and real-time updates.",
-      tags: ["Next.js", "Firebase", "Tailwind CSS"]
-    },
-    {
-      title: "Weather Dashboard",
-      bio:
-        "A responsive weather application that displays live forecasts, hourly weather, and location-based weather information.",
-      tags: ["JavaScript", "OpenWeather API", "CSS"]
-    },
-    {
-      title: "Portfolio Website",
-      bio:
-        "A clean and responsive personal portfolio showcasing projects, skills, experience, and contact information.",
-      tags: ["React", "Framer Motion", "Tailwind CSS"]
-    }
-  ]
-};
+    projects: [
+      {
+        title: "E-Commerce Platform",
+        bio: "A modern online shopping platform featuring authentication, product management, shopping cart, and secure payment integration.",
+        tags: ["React", "Node.js", "MongoDB"],
+      },
+      {
+        title: "Task Management App",
+        bio: "A collaborative task management application with drag-and-drop boards, team collaboration, and real-time updates.",
+        tags: ["Next.js", "Firebase", "Tailwind CSS"],
+      },
+      {
+        title: "Weather Dashboard",
+        bio: "A responsive weather application that displays live forecasts, hourly weather, and location-based weather information.",
+        tags: ["JavaScript", "OpenWeather API", "CSS"],
+      },
+      {
+        title: "Portfolio Website",
+        bio: "A clean and responsive personal portfolio showcasing projects, skills, experience, and contact information.",
+        tags: ["React", "Framer Motion", "Tailwind CSS"],
+      },
+    ],
+  },
+
+  {
+    name: "Sophia Williams",
+    tag: "UI/UX Designer",
+
+    shortBio:
+      "Creative UI/UX Designer focused on crafting intuitive and visually appealing user experiences.",
+
+    fullBio:
+      "I specialize in designing user-centered digital experiences for web and mobile platforms. My expertise includes wireframing, prototyping, user research, and design systems. I enjoy collaborating with developers to create products that are both functional and beautiful. I believe great design solves problems while providing delightful experiences for users.",
+
+    skills: [
+      {
+        title: "Design",
+        items: ["Figma", "Adobe XD", "Photoshop", "Illustrator"],
+      },
+      {
+        title: "Frontend",
+        items: ["HTML", "CSS", "Tailwind CSS"],
+      },
+    ],
+
+    projects: [
+      {
+        title: "Banking App UI",
+        bio: "Designed a modern and secure mobile banking interface.",
+        tags: ["Figma", "UI", "UX"],
+      },
+      {
+        title: "Travel Booking Website",
+        bio: "Created responsive booking flows with an emphasis on usability.",
+        tags: ["Adobe XD", "Prototype"],
+      },
+    ],
+  },
+
+  {
+    name: "Michael Brown",
+    tag: "Mobile App Developer",
+
+    shortBio:
+      "Flutter developer passionate about building smooth, cross-platform mobile applications.",
+
+    fullBio:
+      "Experienced in Flutter development with knowledge of Firebase, REST APIs, and state management. I enjoy building responsive applications with clean architecture and optimized performance. I continuously explore modern mobile technologies and best practices to deliver high-quality user experiences.",
+
+    skills: [
+      {
+        title: "Mobile",
+        items: ["Flutter", "Dart", "Firebase", "Riverpod"],
+      },
+      {
+        title: "Backend",
+        items: ["Node.js", "Express", "MongoDB"],
+      },
+    ],
+
+    projects: [
+      {
+        title: "Fitness Tracker",
+        bio: "Cross-platform fitness application with workout tracking and analytics.",
+        tags: ["Flutter", "Firebase"],
+      },
+      {
+        title: "Expense Manager",
+        bio: "Personal finance app with budgeting and expense visualization.",
+        tags: ["Flutter", "SQLite"],
+      },
+    ],
+  },
+];
+
 
 export default data;

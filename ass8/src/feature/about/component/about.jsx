@@ -2,6 +2,7 @@ import Nav from "../../../shared/component/nav";
 import { Link } from "react-router-dom";
 import data from "../../../data,js";
 import a from "../../../assets/hero.png"
+import Card from "../../../shared/component/card";
 
 function About(){
     return(
@@ -19,8 +20,16 @@ function About(){
                 <img src={a} alt="" />
             </div>
         </div>
+        <div>Skills</div>
+
+        <div>
+            {
+                data.skills.map((pass) => (
+                    <Card title={pass.title} category={pass.items} />
+                ))
+            }
+        </div>
         </>
     )
 }
-
 export default About;
