@@ -1,6 +1,7 @@
 import data from "../../../data,js";
 import { Link } from "react-router-dom";
 import a from "../../../assets/hero.png"
+import About from "../../about/component/about";
 
 
 function Home(){
@@ -13,6 +14,7 @@ function Home(){
                  </h1>
                  <p className="text-4xl">Hi my name is {data.name} </p>
                  <p>{data.shortBio}</p>
+                 <Link to='/about' className="underline">Know More</Link>
             </div>
             <div>
                 <img src={a} alt="" />
